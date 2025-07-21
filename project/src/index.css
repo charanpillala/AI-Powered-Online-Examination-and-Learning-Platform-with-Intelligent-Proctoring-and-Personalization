@@ -1,0 +1,121 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 20% 98%;
+    --foreground: 260 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 260 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 10% 10%;
+
+    --primary: 260 30% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 199 95% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 260 10% 90%;
+    --muted-foreground: 260 10% 40%;
+
+    --accent: 31 96% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 15% 85%;
+    --input: 260 15% 85%;
+    --ring: 260 30% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 260 30% 98%;
+    --sidebar-foreground: 260 20% 30%;
+    --sidebar-primary: 260 30% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 20% 95%;
+    --sidebar-accent-foreground: 260 20% 30%;
+    --sidebar-border: 260 20% 90%;
+    --sidebar-ring: 260 40% 60%;
+  }
+
+  .dark {
+    --background: 260 15% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 260 15% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 260 15% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 260 50% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 199 95% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 260 10% 20%;
+    --muted-foreground: 260 10% 70%;
+
+    --accent: 31 96% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 260 15% 25%;
+    --input: 260 15% 25%;
+    --ring: 260 50% 50%;
+
+    --sidebar-background: 260 15% 15%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 260 40% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 10% 20%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 260 10% 25%;
+    --sidebar-ring: 260 40% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.ai-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-quiz-purple to-quiz-blue;
+}
+
+.quiz-card {
+  @apply border rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+.animate-typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 2s steps(20, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: theme('colors.quiz-purple.DEFAULT') }
+}
