@@ -1,13 +1,13 @@
 # 🎓 AI-Powered Online Examination and Learning Platform  
 ### with Intelligent Proctoring and Personalization
 
-An advanced, full-stack platform built to revolutionize online assessments with intelligent AI-driven features including proctoring, personalized learning analytics, and real-time exam monitoring.
+A next-generation, full-stack platform designed to transform online exams using intelligent features like AI proctoring, personalized learning analytics, and real-time monitoring.
 
 ---
 
 ## 🚀 Features
 
-- ✅ **Role-Based Authentication** (Student, Teacher, Admin)
+- ✅ **Role-Based Authentication** (Student, Teacher)
 - 📝 **Exam Creation & Management** (MCQs, Essay Questions)
 - 🧑‍💻 **AI Proctoring**  
   - Facial recognition  
