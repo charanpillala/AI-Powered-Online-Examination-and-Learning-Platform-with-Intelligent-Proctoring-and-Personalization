@@ -6,3 +6,11 @@ env
 
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_anon_key
+
+
+Backend (/server/.env):
+
+env
+
+SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_KEY=your_service_role_key
